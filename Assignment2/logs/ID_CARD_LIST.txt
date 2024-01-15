@@ -1,0 +1,6 @@
+487234,John Doe,staff
+348723,Person Lastname,staff
+312321,Kenan Pearce,student
+83274,Patrick Lewis,student
+84732,Jeff Smith,emergancy
+83472,Patrick Surname,security
