@@ -9,10 +9,6 @@
 
 using namespace std;
 
-Manager::Manager() {
-    role = "manager";
-}
-
 void Manager::addPerson(int personID, string fullname, string role, string path) {
     ifstream addPersonFile(path); // open file as read only to see if it exists
     if (addPersonFile.is_open()) {
@@ -26,17 +22,9 @@ void Manager::addPerson(int personID, string fullname, string role, string path)
     }
 }
 
-void Manager::removePerson() {
-    // code to remove person
-    // Main code in Person.cpp
-}
 
 void Manager::editPerson(int personID, string fullname, string role) {
     // edit person code
     // To be implemented in the future
 }
 
-void Manager::viewPeople() {
-    // code to view people
-    // Main code in Person.cpp
-}

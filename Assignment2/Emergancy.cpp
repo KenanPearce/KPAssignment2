@@ -10,10 +10,6 @@
 
 using namespace std;
 
-Emergancy::Emergancy() {
-    role = "emergancy";
-}
-
 void Emergancy::addPerson(int personID, string fullname, string role, string path) {
     ifstream addPersonFile(path); // open file as read only to see if it exists
     if (addPersonFile.is_open()) {
@@ -27,15 +23,8 @@ void Emergancy::addPerson(int personID, string fullname, string role, string pat
     }
 }
 
-void Emergancy::removePerson() {
-    // Main code in Person.cpp
-}
-
 void Emergancy::editPerson(int personID, string fullname, string role) {
     // edit person code
     // To be implemented in the future
 }
 
-void Emergancy::viewPeople() {
-    // Main code in Person.cpp
-}

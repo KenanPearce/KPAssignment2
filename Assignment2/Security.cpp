@@ -12,9 +12,6 @@ using namespace std;
 
 int id;
 string name;
-Security::Security() {
-    role = "security";
-}
 
 void Security::addPerson(int personID, string fullname, string role, string path) {
     ifstream addPersonFile(path); // open file as read only to see if it exists
@@ -29,15 +26,8 @@ void Security::addPerson(int personID, string fullname, string role, string path
     }
 }
 
-void Security::removePerson() {
-    // Main code in Person.cpp
-}
 
 void Security::editPerson(int personID, string fullname, string role) {
     // edit person code
     // To be implemented in the future
-}
-
-void Security::viewPeople() {
-    // Main code in Person.cpp
 }

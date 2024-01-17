@@ -10,10 +10,6 @@
 
 using namespace std;
 
-Student::Student() {
-    role = "student";
-}
-
 void Student::addPerson(int personID, string fullname, string role, string path) {
     ifstream addPersonFile(path); // open file as read only to see if it exists
     if (addPersonFile.is_open()) {
@@ -27,15 +23,8 @@ void Student::addPerson(int personID, string fullname, string role, string path)
     }
 }
 
-void Student::removePerson() {
-    // Main code in Person.cpp
-}
-
 void Student::editPerson(int personID, string fullname, string role) {
     // edit person code
     // To be implemented in the future
 }
 
-void Student::viewPeople() {
-    // Main code in Person.cpp
-}

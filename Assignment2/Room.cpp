@@ -37,7 +37,7 @@ void Room::addRoom(string room, string type, string status, string roomPATH) {
 void Room::removeRoom(string roomPATH) {
     // Portfolio Courses. Available at: https://www.youtube.com/watch?v=Ka5Rgfxw9JM (Accessed: 11.1.24)
     int lineNum;
-    cout << "\n What room would you like to remove? ";
+    cout << "\n What room would you like to remove? "; // using index number to find the line
     cin >> lineNum;
     vector<string> lines;
     string line;
@@ -91,13 +91,13 @@ void Room::viewRoom(string roomPATH) {
 void Room::setStatus(string roomPATH) {
     // Chatgpt. Available: https://chat.openai.com/ (Accessed: 12/1/24)
     int lineNum;
-    cout << "\nWhich room's status would you like to change? ";
+    cout << "\nWhich room's status would you like to change? "; // using index to select room again
     cin >> lineNum;
 
     vector<string> lines;
     string line, newStatus;
 
-    ifstream readRoomFile(roomPATH);
+    ifstream readRoomFile(roomPATH); // check if you can read the file
     if (readRoomFile.fail()) {
         cout << "An error occurred while opening the file.";
         return;
@@ -114,7 +114,7 @@ void Room::setStatus(string roomPATH) {
         return;
     }
 
-    // Extract room information
+    // Extract room information and stores into a string
     stringstream ss(lines[lineNum]);
     string roomName, roomType, roomStatus;
     getline(ss, roomName, ',');
@@ -169,7 +169,7 @@ void Room::simEntry(string roomPATH,string peoplePATH, string roomLog, string ti
     cin >> roomNum;
 
     vector<string> roomLines; // stores all the file lines into a vector
-    string roomLine; // 
+    string roomLine; // each line in the file
 
     ifstream readRoomFile(roomPATH);
     if (readRoomFile.fail()) {

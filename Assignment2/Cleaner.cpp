@@ -9,10 +9,6 @@
 
 using namespace std;
 
-Cleaner::Cleaner() {
-    role = "cleaner";
-}
-
 void Cleaner::addPerson(int personID, string fullname, string role, string path) {
     ifstream addPersonFile(path); // open file as read only to see if it exists
     if (addPersonFile.is_open()) {
@@ -26,15 +22,8 @@ void Cleaner::addPerson(int personID, string fullname, string role, string path)
     }
 }
 
-void Cleaner::removePerson() {
-    // Main code in Person.cpp
-}
-
 void Cleaner::editPerson(int personID, string fullname, string role) {
     // edit person code
     // To be implemented in the future
 }
 
-void Cleaner::viewPeople() {
-    // Main code in Person.cpp
-}
