@@ -51,4 +51,4 @@
   <li>The program will then tell you if the person was able to gain access to the room or not. The interaction will be logged in a daily log file, which can be seen by entering "9" in the main menu</li>
 </ol> 
 
-<p>The other functions not mentioned in this user guide haven't been implenented yet.</p>
+<p>The other functions not mentioned in this user guide haven't been implenented yet. All references are in the code of the program.</p>
